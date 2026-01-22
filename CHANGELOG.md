@@ -4,6 +4,13 @@
 
 ## [Unreleased]
 
+## [1.2.252]
+
+### Changed
+
+- Upgrade dependencies to support higher versions of IDEA.
+- Remove check scope from git logic.
+
 ## [1.2.244]
 
 ### Changed

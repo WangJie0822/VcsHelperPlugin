@@ -4,8 +4,8 @@ annotations = "24.1.0"
 kotlinx-serialization-json = "1.6.2"
 
 # plugins
-kotlin = "1.9.21"
-changelog = "2.2.0"
+kotlin = "1.9.22"
+changelog = "2.2.1"
 gradleIntelliJPlugin = "1.17.4"
 qodana = "0.1.13"
 kover = "0.7.5"
