@@ -112,17 +112,18 @@ class CommitSpecificationPanel(private val project: Project?, private val messag
             addWithFont(JLabel(getString(R.String.commit_scope_of_change)), CC())
             scopeOfChangeBox = ComboBox<String>().apply {
                 isEditable = true
-                val path = project?.basePath.orEmpty()
-                val workingDirectory = File(path)
-                val result = GitLogQuery(workingDirectory).execute()
-                if (result.isSuccess()) {
-                    addItem("")
-                    result.getScopes().forEach(
-                        Consumer { item: String? ->
-                            addItem(item)
-                        }
-                    )
-                }
+                addItem("")
+//                val path = project?.basePath.orEmpty()
+//                val workingDirectory = File(path)
+//                val result = GitLogQuery(workingDirectory).execute()
+//                if (result.isSuccess()) {
+//                    addItem("")
+//                    result.getScopes().forEach(
+//                        Consumer { item: String? ->
+//                            addItem(item)
+//                        }
+//                    )
+//                }
                 selectedItem = message?.scopeOfChange.orEmpty()
             }
             addWithFont(scopeOfChangeBox!!, fillX().gap("5", "5", "5", "5").wrap())
